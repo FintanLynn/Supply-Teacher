@@ -30,9 +30,37 @@
 <div class="w3-main">
 <div class="w3-padding-8">
 <div class="w3-black w3-container w3-center">
-<div style="overflow-x:auto;">
-<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=fintan.lynn11%40bathspa.ac.uk&amp;color=%2328754E&amp;ctz=Europe%2FLondon" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<style>
+@media (max-width: 550px) {
+.big-container {
+display: none;
+    }
+    }
+    /* Responsive iFrame */
+    .responsive-iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    .responsive-iframe-container iframe,  
+    .vresponsive-iframe-container object, 
+    .vresponsive-iframe-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+    </style>
+<div class="responsive-iframe-container big-container">
+<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=fintan.lynn11%40bathspa.ac.uk&amp;color=%2328754E&amp;ctz=Europe%2FLondon" style="border-width:0" width="100%" height="650" frameborder="0" scrolling="no"></iframe>
+
+<div class="responsive-iframe-container small-container">   
+<iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=fintan.lynn11%40bathspa.ac.uk&amp;color=%2328754E&amp;ctz=Europe%2FLondon" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
+    
 <!-- END Third Grid: My Availability Calendar -->
 
 <!-- Fourth Grid: About Me -->
